@@ -1,0 +1,30 @@
+article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 10px;
+    margin: 10px 0;
+}
+p{
+    margin-bottom: 5px;
+}
+
+.ImgBx{
+    width: 100%;
+    height: auto;
+}
+.ImgBx>img {
+    width: 100%;
+    height: auto;
+}
+.underline {
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+.genres {
+    margin-bottom: 10px;
+}
