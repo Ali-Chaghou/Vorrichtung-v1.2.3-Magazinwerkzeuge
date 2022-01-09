@@ -6,7 +6,7 @@ const MagazinCart = (props) => {
     return (
         <article>
             <div className='ImgBx'>
-               <img src={props.image_url} alt="Image"/>
+               <img src={props.image_url} alt='img'/>
             </div>
             <h2>Benenung.: <span> {props.title}</span></h2>
             <p>Datum.:<span> {props.year}</span></p>
