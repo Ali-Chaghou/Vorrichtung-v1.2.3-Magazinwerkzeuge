@@ -49,7 +49,7 @@ class App extends React.Component {
           })
         );
       };
-      //Ändeurng Github Push
+      //Test
       //Funktion in JS:
 
 
