@@ -2,6 +2,8 @@ import React from 'react';
 import MagazinCart from './Components/MagazinCart';
 import Data from "./Data.js";
 import './App.css';
+import HomeHeader from './Components/HomeHeader';
+import Searchbar from './Components/Searchbar';
 
 
 class App extends React.Component {
@@ -125,22 +127,28 @@ class App extends React.Component {
  
     render() { 
         return <main>
+          <HomeHeader />
 
-            <div className="MD-Header">
-
-                <div className="MD-Input">
-                    <input type="text" onChange={this.Searchbar} placeholder="Gib hier ein title ein"></input>
-                </div>
-
-                <div className="MD-Button">
-                    <button onClick={this.Ascending}>Datum aufsteigend</button>
-                    <button onClick={this.Descending}>Datum absteigend</button>
-                    <button onClick={this.Rate}>Schlechtester Zustand</button>
-                    <button onClick={this.sortAZ}>A-Z</button>
-                    <button onClick={this.ZA}>Z-A</button>
-                </div>
-
-                <div>
+          
+    <div className="navbar-component">
+                    <div className="navbar area">
+                      <nav role="navigation" id="navigation" className="list">
+                         <a href="#" onClick={this.Ascending} className="item -link">Datum aufsteigend</a>
+                         <a href="#" onClick={this.Descending}  className="item -link">Datum absteigend</a>
+                          <a href="#" onClick={this.Rate}  className="item -link">Zustand</a>
+                          <a href="#" onClick={this.sortAZ}  className="item -link">Von A-Z</a>
+                          <a href="#" onClick={this.ZA}  className="item -link">Von Z-A</a>
+                      <span class="item"><i className="fa fa-search"></i></span>
+                  </nav>
+    
+                  <button data-collapse data-target="#navigation" className="toggle">
+                  <span className="icon"></span>
+                </button>
+      </div>
+       
+        <div className='SearchFilter'>
+                 <Searchbar onChange={this.Searchbar} />
+                 <div>
                     <select id="genreSelect" onChange={this.filterGenre} defaultValue="Genre">
                         <option disabled>Maschinen-Nr</option>
                         <option value="1149">1149</option>
@@ -149,21 +157,23 @@ class App extends React.Component {
                         <option value="1159">1159</option>
                         <option value="7177">7177</option>
                         <option value="7179">7179</option>
-                        <option value="1149">4191</option>
-                        <option value="1150">4193</option>
-                        <option value="1157">4194</option>
-                        <option value="1159">4195</option>
-                        <option value="7177">4196</option>
-                        <option value="7179">4197</option>
-                        <option value="1149">4180</option>
-                        <option value="1150">4181</option>
-                        <option value="1157">4182</option>
-                        <option value="1159">4183</option>
-                        <option value="7177">4184</option>
-                        <option value="7179">4185</option>
+                        <option value="4191">4191</option>
+                        <option value="4192">4192</option>
+                        <option value="4193">4193</option>
+                        <option value="4194">4194</option>
+                        <option value="4195">4195</option>
+                        <option value="4196">4196</option>
+                        <option value="4197">4197</option>
+                        <option value="4180">4180</option>
+                        <option value="4181">4181</option>
+                        <option value="4182">4182</option>
+                        <option value="4183">4183</option>
+                        <option value="4184">4184</option>
+                        <option value="41">4185</option>
                      </select>
                 </div>
                 </div>
+        </div>
                 <form>
                     <h2 className="CreateMovieText">Lege eine neue Vorrichtung an</h2>
                     

@@ -8,8 +8,166 @@
     font-family: 'Lato', sans-serif;
 }
 body {
-    background-color: #dad9d9;
+    background-color: #ffffff;
 }
+
+/* 
+Navbar
+*/
+
+a {
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+}
+.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .area {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .area {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .area {
+    width: 1140px;
+  }
+}
+.navbar-component {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+.navbar-component > .navbar {
+  justify-content: space-between;
+}
+.navbar > .brand {
+  display: block;
+  font-size: 16px;
+  color: #777;
+  margin: 22px;
+}
+.navbar > .toggle {
+  outline: none;
+  border: 0;
+  display: inline-block;
+  background-color: transparent;
+  background-image: none;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 22px;
+}
+@media (min-width: 768px) {
+  .navbar > .toggle {
+    display: none;
+  }
+}
+.navbar > .toggle > .icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.navbar > .toggle > .icon,
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  transition: background-color 0.3s linear, transform 0.3s linear;
+  background-color: #555555;
+}
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
+  position: absolute;
+  content: "";
+}
+.navbar > .toggle > .icon:before {
+  top: -8px;
+}
+.navbar > .toggle > .icon:after {
+  top: 8px;
+}
+.navbar > .toggle.-active > .icon {
+  background-color: transparent;
+}
+.navbar > .toggle.-active > .icon:before {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar > .toggle.-active > .icon:after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.navbar > .list {
+  display: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+.SearchFilter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .navbar > .list {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .navbar > .list {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+}
+.navbar > .list.-on {
+  display: flex;
+}
+.navbar > .list > .item {
+  display: block;
+  flex-shrink: 0;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 14px;
+}
+.navbar > .list > .item.-link {
+  line-height: 68px;
+  color: #555;
+  border-bottom: 4px solid transparent;
+}
+.navbar > .list > .item.-link.-active,
+.navbar > .list > .item.-link:hover,
+.navbar > .list > .item.-link:focus {
+  color: #333;
+  border-bottom-color: #008855;
+}
+
+
+/*Ende*/
 section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -41,11 +199,7 @@ section>article>h2,p {
    
 }
 
-.MD-Input> input{
 
-  padding: 5px;
-   
-}
 form{
     display: flex;
     justify-content: center;
@@ -57,41 +211,9 @@ form{
 .CreateMovieText{
     font-size: 30px;
 }
-form>input{
-    padding: .1em .1em .1em .2em;
-    margin: .2em auto;
-    width: 20%;
-    border: 0;
-    background: #eee;
-    border-radius: 50px;
-}
-form>button, .MD-Button>button{
-
-    background:none;
-	border:none;
-	width:200px;
-	min-height:25px;
-	margin:10px 5px 10px;
-	border-radius:20px;
-	color:white;
-	padding:0.2% 0 0;
-	font-size:.9em;
-    transition: background 1s ease-out; 
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#545251), color-stop(100%,#008852)); 
-}
-form>button:hover{
-    background-position:-200px;  
-} 
-.MD-Button>button:hover {
-    background-position:-100px;  
-} 
 
 
-.MD-Button>button{
-    font-size: 10px;
-    width: 100px;
-    color: #fff;
- }
+
 
 @media (max-width: 768px) {
     section{

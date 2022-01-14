@@ -1,0 +1,52 @@
+/*search-field*/
+.form-searchbar {
+    width: 60px;
+    height: 39px;
+    border: 4px solid white;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+.form-searchbar:hover {
+    width: 300px;
+    transition: all 2s ease;
+} /*weiteren state hinzufügen, auch wenn Text eingegeben wurde, Weite beibehalten*/
+
+.form-searchbar img {
+    width: 19px;
+    height: 19px;
+    padding-left: 5px;
+}
+
+.input-search {
+    text-decoration: none;
+    border-style: none;
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    background-color:  rgba(0, 0, 0, 0);
+    width: 100%;
+    margin-left: 5px;
+    font-family: 'Open Sans';
+}
+
+.input-search:focus-visible {
+    outline-style: none;
+}
+
+
+
+
+/*media query*/
+@media screen and (max-width: 768px) {
+    .form-searchbar:hover {
+      width: 200px;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    .form-searchbar:hover {
+      width: 80px;
+    }
+  }
