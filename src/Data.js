@@ -47,6 +47,17 @@ let magazin = [
         rate: '10',
         articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
         crowd: '1',
+    },
+    {   
+        image_url: [Funktionslehre_450796],
+        title: 'Drehstahlhalter ',
+        year: '2011',
+        typ: 'Werkzeug',
+        articleNumber: ' 310201',
+        maschine: ['4182', '4181', '4180'],
+        rate: '10',
+        articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
+        crowd: '1',
     }
     //,
     // {   
