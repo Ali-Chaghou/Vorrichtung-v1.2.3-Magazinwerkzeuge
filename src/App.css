@@ -15,6 +15,14 @@ body {
 Navbar
 */
 
+h1 {
+  display: flex;
+  align-items: flex-end;
+  color: #008855;
+  justify-content: flex-end;
+  font-size: 50px;
+}
+
 a {
   text-decoration: none;
   transition: all 0.3s linear 0s;
@@ -115,6 +123,13 @@ a {
   flex-flow: row nowrap;
   align-items: center;
   white-space: nowrap;
+}
+.Searchfilter-Flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
 }
 .SearchFilter{
   display: flex;

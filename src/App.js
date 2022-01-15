@@ -131,6 +131,7 @@ class App extends React.Component {
 
           
     <div className="navbar-component">
+
              <div className="navbar area">
                       <nav role="navigation" id="navigation" className="list">
                          <a href="#" onClick={this.Ascending} className="item -link">Datum aufsteigend</a>
@@ -145,36 +146,48 @@ class App extends React.Component {
                   <span className="icon"></span>
                 </button>
              </div>
-             <form className='form-searchbar'>
-                        <input type='text' id='input-search' className='input-search' onChange={this.Searchbar}></input>
-                    </form>
-                {/* <Searchbar onChange={this.Searchbar} /> */}
-                 <div className='SearchFilter'>
-                 <div>
-                    <select id="genreSelect" onChange={this.filterGenre} defaultValue="Genre">
-                        <option disabled>Maschinen-Nr</option>
-                        <option value="1149">1149</option>
-                        <option value="1150">1150</option>
-                        <option value="1157">1157</option>
-                        <option value="1159">1159</option>
-                        <option value="7177">7177</option>
-                        <option value="7179">7179</option>
-                        <option value="4191">4191</option>
-                        <option value="4192">4192</option>
-                        <option value="4193">4193</option>
-                        <option value="4194">4194</option>
-                        <option value="4195">4195</option>
-                        <option value="4196">4196</option>
-                        <option value="4197">4197</option>
-                        <option value="4180">4180</option>
-                        <option value="4181">4181</option>
-                        <option value="4182">4182</option>
-                        <option value="4183">4183</option>
-                        <option value="4184">4184</option>
-                        <option value="41">4185</option>
-                     </select>
-                </div>
-                </div>
+             <div className='Searchfilter-Flex'>
+
+                    <div className='form-searchbar'>
+                                <input type='text' id='input-search' className='input-search' onChange={this.Searchbar}></input>
+                    </div>
+                        {/* <Searchbar onChange={this.Searchbar} /> */}
+
+
+                    <div className='SearchFilter'>
+                    <div>
+                        <select id="genreSelect" onChange={this.filterGenre} defaultValue="Genre">
+                            <option disabled>Maschinen-Nr</option>
+                            <option value="1149">1149</option>
+                            <option value="1150">1150</option>
+                            <option value="1157">1157</option>
+                            <option value="1159">1159</option>
+                            <option value="7177">7177</option>
+                            <option value="7179">7179</option>
+                            <option value="4191">4191</option>
+                            <option value="4192">4192</option>
+                            <option value="4193">4193</option>
+                            <option value="4194">4194</option>
+                            <option value="4195">4195</option>
+                            <option value="4196">4196</option>
+                            <option value="4197">4197</option>
+                            <option value="4180">4180</option>
+                            <option value="4181">4181</option>
+                            <option value="4182">4182</option>
+                            <option value="4183">4183</option>
+                            <option value="4184">4184</option>
+                            <option value="41">4185</option>
+                        </select>
+                    </div>
+                    </div>
+
+
+
+
+             </div>
+
+
+            
         </div>
                 <form>
                     <h2 className="CreateMovieText">Lege eine neue Vorrichtung an</h2>
