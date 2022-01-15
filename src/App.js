@@ -3,7 +3,7 @@ import MagazinCart from './Components/MagazinCart';
 import Data from "./Data.js";
 import './App.css';
 import HomeHeader from './Components/HomeHeader';
-import Searchbar from './Components/Searchbar';
+// import Searchbar from './Components/Searchbar';
 
 
 class App extends React.Component {
@@ -131,7 +131,7 @@ class App extends React.Component {
 
           
     <div className="navbar-component">
-                    <div className="navbar area">
+             <div className="navbar area">
                       <nav role="navigation" id="navigation" className="list">
                          <a href="#" onClick={this.Ascending} className="item -link">Datum aufsteigend</a>
                          <a href="#" onClick={this.Descending}  className="item -link">Datum absteigend</a>
@@ -144,10 +144,12 @@ class App extends React.Component {
                   <button data-collapse data-target="#navigation" className="toggle">
                   <span className="icon"></span>
                 </button>
-      </div>
-       
-        <div className='SearchFilter'>
-                 <Searchbar onChange={this.Searchbar} />
+             </div>
+             <form className='form-searchbar'>
+                        <input type='text' id='input-search' className='input-search' onChange={this.Searchbar}></input>
+                    </form>
+                {/* <Searchbar onChange={this.Searchbar} /> */}
+                 <div className='SearchFilter'>
                  <div>
                     <select id="genreSelect" onChange={this.filterGenre} defaultValue="Genre">
                         <option disabled>Maschinen-Nr</option>
