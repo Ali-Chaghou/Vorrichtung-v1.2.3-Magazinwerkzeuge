@@ -623,9 +623,11 @@ Animation Keyframes
         margin: 10px;
         font-size: 10px;
         margin: 20px 50px;
+      
     }
-  
-  
+    .createNewTool>.fade-box{
+      max-width: 250px;
+    }
   
 }
 
