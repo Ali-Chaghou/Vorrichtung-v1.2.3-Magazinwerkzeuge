@@ -1,28 +1,50 @@
 import './MagazinCart.css';
 import Rating from './Rating';
 
+//Logo IMG
+import Logo from "../Images/Logo.jpg";
+
 
 const MagazinCart = (props) => {
     return (
-        <article>
-            <div className='ImgBx'>
-               <img src={props.image_url} alt='img'/>
-            </div>
-            <h2>Benenung.: <span> {props.title}</span></h2>
-            <p>Datum.:<span> {props.year}</span></p>
-            <p>Typ.:<span> {props.typ}</span></p>
-            <p>Werkzeug-ID.: <span> {props.articleNumber}</span></p>
-            <p>Menge.: <span> {props.crowd}</span> Stück</p>
-            <p className='underline'>Verknüpfte Artikel</p>
-            {props.articleDescriptions.map((articleDescription, index) =>(
-             <p className="genres" key={`${props.title} articleDescription ${index}`}>{articleDescription}</p>
-            ))}
-            <Rating rates={props.rates} title={props.title}/>
-            <p className='underline'>Maschinen Nummer</p>
-            {props.maschinen.map((maschine, index) =>(
-             <p className="genres" key={`${props.title} maschinen ${index}`}>{maschine}</p>
-            ))}
+        <article >
+         
+                <div className='logo ImgBx'>
+                     <img src={Logo} alt='logo' className='Logo'/>
+                     <img src={props.image_url} alt='img' className='Werkzeug'/>
+                     <p className='ID-Number'> <span> {props.articleNumber}</span></p>
+                </div>
+                <h2 className='title'> <span> {props.title}</span></h2>
+                <div className='rating'>
+                    <Rating rates={props.rates} title={props.title}/>
+                </div>
+                <div className='cardBody'>
+
+                    <div className='Date-Typ-Pcs'>
+                        <p>Datum<span> {props.year}</span></p>
+                        
+                        <p>Typ<span> {props.typ}</span></p>
+                        
+                        <p>Menge<span> {props.crowd} pcs</span> </p>
+                    </div>
+
+                    <div className='articleDescription'>
+                        Verknüpfte Artikel
+                        {props.articleDescriptions.map((articleDescription, index) =>(
+                        <p className="genres" key={`${props.title} articleDescription ${index}`}><span>{articleDescription}</span></p>
+                        ))}
+                    </div>
+
+                    <div className='maschine'>
+                        Maschinennummern
+                        {props.maschinen.map((maschine, index) =>(
+                        <p className="genres" key={`${props.title} maschinen ${index}`}><span>{maschine}</span></p>
+                        ))}
+                    </div>
+
+                </div>
         </article>
+        
     )
 }
 

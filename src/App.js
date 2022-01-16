@@ -4,6 +4,8 @@ import Data from "./Data.js";
 import './App.css';
 import HomeHeader from './Components/HomeHeader';
 // import Searchbar from './Components/Searchbar';
+// import Form from './Components/Form';
+
 
 
 class App extends React.Component {
@@ -142,9 +144,11 @@ class App extends React.Component {
                       <span class="item"><i className="fa fa-search"></i></span>
                   </nav>
     
+                 {/*
                   <button data-collapse data-target="#navigation" className="toggle">
-                  <span className="icon"></span>
-                </button>
+                    <span className="icon"></span>
+                 </button>
+                 */}
              </div>
              <div className='Searchfilter-Flex'>
 
@@ -162,8 +166,12 @@ class App extends React.Component {
                             <option value="1150">1150</option>
                             <option value="1157">1157</option>
                             <option value="1159">1159</option>
-                            <option value="7177">7177</option>
-                            <option value="7179">7179</option>
+                            <option value="4180">4180</option>
+                            <option value="4181">4181</option>
+                            <option value="4182">4182</option>
+                            <option value="4183">4183</option>
+                            <option value="4184">4184</option>
+                            <option value="4185">4185</option>
                             <option value="4191">4191</option>
                             <option value="4192">4192</option>
                             <option value="4193">4193</option>
@@ -171,12 +179,8 @@ class App extends React.Component {
                             <option value="4195">4195</option>
                             <option value="4196">4196</option>
                             <option value="4197">4197</option>
-                            <option value="4180">4180</option>
-                            <option value="4181">4181</option>
-                            <option value="4182">4182</option>
-                            <option value="4183">4183</option>
-                            <option value="4184">4184</option>
-                            <option value="41">4185</option>
+                            <option value="7177">7177</option>
+                            <option value="7179">7179</option>
                         </select>
                     </div>
                     </div>
@@ -189,7 +193,7 @@ class App extends React.Component {
 
             
         </div>
-                <form>
+                {/* <form>
                     <h2 className="CreateMovieText">Lege eine neue Vorrichtung an</h2>
                     
 
@@ -204,7 +208,35 @@ class App extends React.Component {
 
 
                     <button  onClick={this.NewTool}>Werkzeug anlegen</button>
-               </form>   
+               </form>    */}
+    <section className="FormSection">
+                 <div className="Formlogo"> 
+                            <h4><i> Lege hier ein neues Werkzeug an</i></h4>
+                            <p>Lorem1000 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                            </p>
+                    </div> 
+                  <div className="container">
+                  <div className="login">
+                    <form className="createNewTool">
+                      <div className="fade-box">
+                            <input type="text" id="title" placeholder="Benennung" />
+                            <input type="text" id="year"  placeholder="Herstellungsjahr"/>
+                            <input type="text" id="typ" placeholder="Typ z.b Vorrichtung"/>
+                            <input type="text" id="articleNumber" placeholder="Artikelnummer"/>
+                            <input type="text" id="maschine" placeholder="Maschinennummer" />
+                            <input type="number" id="rate"  placeholder="Zustand"/>
+                            <input type="text" id="articleDescription" placeholder="Artikel verknüpfung" />
+                            <input type="text" id="crowd"  placeholder="Stückzahl"/>
+                      </div>
+                   
+
+                        <button  onClick={this.NewTool}>Werkzeug anlegen</button>
+                     </form> 
+                     </div>     
+                    
+                </div>        
+              </section>;
+            
       
 
             <section>
@@ -224,6 +256,7 @@ class App extends React.Component {
                     />
                 ))}
             </section>
+           
         </main>
       
     }

@@ -1,4 +1,18 @@
+//Funktionslehren
 import Funktionslehre_450796 from "./Images/450796.jpg";
+import Funktionslehre_455160 from "./Images/455160.jpg";
+import Funktionslehre_455161 from "./Images/455161.jpg";
+import Funktionslehre_450571 from "./Images/450571.jpg";
+
+//Lehren
+import Lehrdorn_5D10 from "./Images/5D10.jpg";
+import Rachenlehre_11h11 from "./Images/11h11.jpg";
+import Rachenlehre_12_7h12 from "./Images/12.7h12.jpg";
+import Rachenlehre_13_1h11 from "./Images/13.1h11.jpg";
+import Rachenlehre_17h11 from "./Images/17h11.jpg";
+import Lehrdorn_4H12 from "./Images/DMS.jpg";
+
+
 
 
 let magazin = [
@@ -9,108 +23,111 @@ let magazin = [
         typ: 'Funktionslehre',
         articleNumber: '450796',
         maschine: ['4192'],
-        rate: '1',
+        rate: '5',
         articleDescription: ['Für 3/8" Kopfstücke'], 
         crowd: '3',
-    }
-    ,
-    {   
-        image_url: [Funktionslehre_450796],
-        title: 'Drehstahlhalter ',
-        year: '2001',
-        typ: 'Werkzeug',
-        articleNumber: ' 310201',
-        maschine: ['4182', '4181', '4180'],
-        rate: '10',
-        articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
-        crowd: '1',
     },
     {   
-        image_url: [Funktionslehre_450796],
-        title: 'Funktionslehre für 3/8" 4kt. Profilieren',
-        year: '2027',
+        image_url: [Funktionslehre_455160],
+        title: 'Stichmaßlehre und Messhilfe ',
+        year: '2016',
         typ: 'Funktionslehre',
-        articleNumber: '450796',
+        articleNumber: ' 455160',
         maschine: ['4192'],
-        rate: '1',
+        rate: '7',
         articleDescription: ['Für 3/8" Kopfstücke'], 
-        crowd: '3',
-    }
-    ,
-    {   
-        image_url: [Funktionslehre_450796],
-        title: 'Drehstahlhalter ',
-        year: '2011',
-        typ: 'Werkzeug',
-        articleNumber: ' 310201',
-        maschine: ['4182', '4181', '4180'],
-        rate: '10',
-        articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
         crowd: '1',
     },
     {   
-        image_url: [Funktionslehre_450796],
-        title: 'Drehstahlhalter ',
-        year: '2011',
-        typ: 'Werkzeug',
-        articleNumber: ' 310201',
-        maschine: ['4182', '4181', '4180'],
-        rate: '10',
-        articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
+        image_url: [Funktionslehre_455161],
+        title: 'Digitalmessschieber ',
+        year: '2016',
+        typ: 'Funktionslehre',
+        articleNumber: ' 455161',
+        maschine: ['4192'],
+        rate: '7',
+        articleDescription: ['Für 3/8" Kopfstücke'], 
         crowd: '1',
     }
-    //,
-    // {   
-    //     image_url: [VorrichtungOne],
-    //     title: 'Aufnahmevorrichtung ',
-    //     year: '2011',
-    //     typ: 'Vorrichtung',
-    //     articleNumber: ' 310599',
-    //     maschine: ['7179', '7177'],
-    //     rate: '5',
-    //     articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick'], 
-    //     crowd: '4',
-    // },    {   
-    //     image_url: [VorrichtungTwo],
-    //     title: 'Tandem-Spanner ',
-    //     year: '2012',
-    //     typ: 'Vorrichtung',
-    //     articleNumber: ' 320871',
-    //     maschine: ['1149', '1150', '1157', '1159'],
-    //     rate: '8',
-    //     articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
-    //     crowd: '10',
-    // },    {   
-    //     image_url: [VorrichtungThree],
-    //     title: 'Tandem-Aufnahme',
-    //     year: '2005',
-    //     typ: 'Vorrichtung',
-    //     articleNumber: ' 320871',
-    //     maschine: ['1149', '1150', '1157', '1159'],
-    //     rate: '4',
-    //     articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
-    //     crowd: '9',
-    // },    {   
-    //     image_url: [VorrichtungFour],
-    //     title: 'Tandem-Halter ',
-    //     year: '2017',
-    //     typ: 'Vorrichtung',
-    //     articleNumber: ' 320871',
-    //     maschine: ['1149', '1150', '1157', '1159'],
-    //     rate: '6',
-    //     articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
-    //     crowd: '2',
-    // },    {   
-    //     image_url: [VorrichtungFive],
-    //     title: 'Tandem-Spanner ',
-    //     year: '2003',
-    //     typ: 'Vorrichtung',
-    //     articleNumber: ' 320871',
-    //     maschine: ['1149', '1150', '1157', '1159'],
-    //     rate: '3',
-    //     articleDescription: ['55582 - 730N/65', '56975 - 730/65 Quick', '57855 - 730N/65 Neutral', '57883 - 730/20 Heavy Duty 14" ', '57908 - 721/30 Heavy Duty 18" '], 
-    //     crowd: '6',
-    // }
+    ,
+    {   
+        image_url: [Funktionslehre_450571],
+        title: 'Kugelrillenlehre 3/8" ',
+        year: '2010',
+        typ: 'Funktionslehre',
+        articleNumber: ' 450571',
+        maschine: ['4192'],
+        rate: '4',
+        articleDescription: ['Für 3/8" Kopfstücke'], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Lehrdorn_4H12],
+        title: '4H12 Lehredorn',
+        year: '2016',
+        typ: 'Lehre',
+        articleNumber: '410120',
+        maschine: ['4192'],
+        rate: '7',
+        articleDescription: ['Gleitkopf','Gelenkstücke','Messkopfstücke'], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Lehrdorn_5D10],
+        title: '5D10 Lehredorn',
+        year: '2011',
+        typ: 'Lehre',
+        articleNumber: '410822',
+        maschine: ['4192'],
+        rate: '5',
+        articleDescription: ['Gleitkopf','Gelenkstücke','Messkopfstücke'], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Rachenlehre_11h11],
+        title: '11h11 Rachenlehre',
+        year: '2012',
+        typ: 'Lehre',
+        articleNumber: '410279',
+        maschine: ['4192'],
+        rate: '5',
+        articleDescription: ['Gelenkstücke'], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Rachenlehre_12_7h12],
+        title: '12.7h12 Rachenlehre',
+        year: '2017',
+        typ: 'Lehre',
+        articleNumber: '410311',
+        maschine: ['4192'],
+        rate: '8',
+        articleDescription: [''], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Rachenlehre_13_1h11],
+        title: '13.1h11 Rachenlehre',
+        year: '2012',
+        typ: 'Lehre',
+        articleNumber: '415358',
+        maschine: ['4192'],
+        rate: '5',
+        articleDescription: ['Gelenkstücke', 'Gleitköpfe'], 
+        crowd: '1',
+    },
+    {   
+        image_url: [Rachenlehre_17h11],
+        title: '17h11 Rachenlehre',
+        year: '2012',
+        typ: 'Lehre',
+        articleNumber: '410377',
+        maschine: ['4192'],
+        rate: '5',
+        articleDescription: ['VDE-Verlängerung', 'VDE-Übergangsteil'], 
+        crowd: '1',
+    },
+    
 ];
 
 export default magazin
