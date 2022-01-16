@@ -184,32 +184,11 @@ class App extends React.Component {
                         </select>
                     </div>
                     </div>
-
-
-
-
              </div>
-
-
             
         </div>
-                {/* <form>
-                    <h2 className="CreateMovieText">Lege eine neue Vorrichtung an</h2>
-                    
-
-                    <input type="text" id="title" placeholder="Benennung" />
-                    <input type="text" id="year"  placeholder="Herstellungsjahr"/>
-                    <input type="text" id="typ" placeholder="Typ z.b Vorrichtung"/>
-                    <input type="text" id="articleNumber" placeholder="Artikelnummer"/>
-                    <input type="text" id="maschine" placeholder="Maschinennummer" />
-                    <input type="number" id="rate"  placeholder="Zustand"/>
-                    <input type="text" id="articleDescription" placeholder="Artikel verknüpfung" />
-                    <input type="text" id="crowd"  placeholder="Stückzahl"/>
-
-
-                    <button  onClick={this.NewTool}>Werkzeug anlegen</button>
-               </form>    */}
-    <section className="FormSection">
+        
+        <section className="FormSection">
                  <div className="Formlogo"> 
                             <h4><i> Lege hier ein neues Werkzeug an</i></h4>
                             <p>Lorem1000 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
@@ -235,7 +214,7 @@ class App extends React.Component {
                      </div>     
                     
                 </div>        
-              </section>;
+              </section>
             
       
 
