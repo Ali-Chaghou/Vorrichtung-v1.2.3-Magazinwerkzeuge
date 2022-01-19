@@ -12,7 +12,9 @@
     font-family: 'Lato', sans-serif;
 }
 body {
-    background-color: #ffffff;
+    height: 100%;
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
+		background-size: cover;
 }
 
 /* 
@@ -137,6 +139,13 @@ a {
   flex-direction: row-reverse;
   gap: 30px;
 }
+.input-search {
+  border: solid 1px #111;
+  font-family: 'Permanent Marker', cursive;
+  font-size: .6em;
+  color: rgba(238, 238, 238, 0.8);
+
+}
 @media (min-width: 768px) {
   .navbar > .list {
     display: flex;
@@ -216,17 +225,6 @@ section>article>h2,p {
 }
 
 
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    border: 1px solid #111;
-    margin: 10px;
-}
-.CreateMovieText{
-    font-size: 30px;
-}
 
 
 
@@ -262,7 +260,6 @@ form{
     }
   
   
-  
 }
 @media (max-width: 400px) {
     section{
@@ -294,6 +291,7 @@ form{
 .FormSection .Formlogo p {
     margin-top: 100px;
     font-size: 20px;
+    text-align: right;
 }
 .FormSection{
     display: grid;
@@ -304,6 +302,10 @@ form{
     margin: 10px;
     font-size: 10px;
     margin: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .FormSection >.container {
     display: flex;
@@ -327,40 +329,42 @@ h4 {
   font-family: 'Ubuntu', sans-serif;
   color: #008855;
   font-size: 18px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1000;
 }
+
+
 h4:before {
-  /* animation: before-glow 2s ease-out infinite alternate; */
+ animation: before-glow 2s ease-out infinite alternate; 
   border-left: 535px solid transparent;
   border-bottom: 10px solid #008855;
   content: ' ';
   height: 0;
   position: absolute;
-  right: -74px;
+  right: -40px;
   top: -10px;
   width: 0;
 }
 h4:after {
-  /* animation: after-glow 2s ease-out infinite alternate; */
+  animation: after-glow 2s ease-out infinite alternate; 
   border-left: 100px solid transparent;
   border-top: 16px solid #008855;
   content: ' ';
   height: 0;
   position: absolute;
-  right: -85px;
+  right: -50px;
   top: 24px;
   transform: rotate(-47deg);
   width: 0;
 }
-
 /* =========================================
 Log in form
 ========================================= */
+/* =========================================
 .fade-box {
   animation: input-entry 3s ease-in;
   z-index: 4;
@@ -411,7 +415,7 @@ Log in form
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.2), inset 0 0 5px rgba(255, 0, 0, 0.1), 0 2px 0 #000;
 }
 .login button {
-  animation: input-entry 3s ease-in;
+   animation: input-entry 3s ease-in; 
   background: #222;
   background: linear-gradient(#333333, #222222);
   box-sizing: content-box;
@@ -450,9 +454,9 @@ Log in form
 
 
 
-/* =========================================
+
 Animation Keyframes
-========================================= */
+
 @keyframes logo-entry {
   0% {
     opacity: 0;
@@ -509,7 +513,7 @@ Animation Keyframes
   }
   100% {
     height: 220px;
-    width: 500px;
+    width: 200px;
   }
 }
 @keyframes box-glow {
@@ -549,6 +553,103 @@ Animation Keyframes
   }
 }
 
+========================================= */
+
+.shade {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.blackboard {
+  max-width: 300px;
+  border: tan solid 12px;
+  border-top: #bda27e solid 12px;
+  border-left: #b19876 solid 12px;
+  border-bottom: #c9ad86 solid 12px;
+  box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+  background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+  background-color: #333;
+}
+
+/**/
+.blackboard:before {
+  
+  content: "Lege ein neues Werkzeug an";
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.2em;
+  color: rgba(238, 238, 238, 0.7);
+  text-align: center;
+  padding: 0 20px;
+  
+ 
+}
+
+
+.form {
+  padding: 70px 20px 20px;
+}
+
+
+
+label {
+  vertical-align: middle;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.6em;
+  color: rgba(238, 238, 238, 0.7);
+}
+
+p:nth-of-type(5) > label {
+  vertical-align: top;
+}
+
+input,
+textarea {
+  vertical-align: middle;
+  padding-left: 10px;
+  background: none;
+  border: none;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.6em;
+  color: rgba(238, 238, 238, 0.8);
+  line-height: .6em;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  font-size: 1.4em;
+  line-height: 1em;
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  color: rgba(238, 238, 238, 0.7);
+  background-color: #222;
+  line-height: 1em;
+  padding:5px 5px;
+  margin-top: 10px;
+}
+
+button:focus {
+  background: rgba(238, 238, 238, 0.2);
+  color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+  background: rgba(238, 238, 238, 0.2);
+  color: rgba(238, 238, 238, 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: rgba(238, 238, 238, 0.4);
+  color: rgba(238, 238, 238, 0.3);
+  text-shadow: none;
+}
+
+
 
 @media (max-width: 567px) {
     .FormSection{
@@ -559,7 +660,7 @@ Animation Keyframes
         gap: 60px;
         margin: 10px;
         font-size: 10px;
-        margin: 20px 50px;
+        margin: 20px 20px;
       
     }
     .createNewTool>.fade-box{

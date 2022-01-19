@@ -162,6 +162,8 @@ class App extends React.Component {
                     <div>
                         <select id="genreSelect" onChange={this.filterGenre} defaultValue="Genre">
                             <option disabled>Maschinen-Nr</option>
+                            <option value="1144">1144</option>
+                            <option value="1153">1153</option>
                             <option value="1149">1149</option>
                             <option value="1150">1150</option>
                             <option value="1157">1157</option>
@@ -189,15 +191,23 @@ class App extends React.Component {
         </div>
         
         <section className="FormSection">
-                 <div className="Formlogo"> 
-                            <h4><i> Lege hier ein neues Werkzeug an</i></h4>
-                            <p>Lorem1000 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+
+               <div className="Formlogo"> 
+                            <h4><i> Magazin App </i></h4>
+                            <p>
+                            Schön das du hier bist,<br/>
+                            findest du nicht auch nur wer die neuesten Technologien versteht, kann das Beste aus ihnen herausholen?
+                            Mein Ziel war es, uns mit React eine digitale Übersicht zu programmieren,
+                            die uns die Möglichkeit gibt stet genau zu wissen, wann sich wo was befindet.
+                            Die Idee entstand schon während der Umzugsplanung von Werk 3 (Remscheid) nach Werk 2 (Wuppertal), 
+                            da dachte ich, das wird uns durchaus bei unserem Vorhaben helfen können. Und ganz klar um kein Chaos am Ende zu bekommen, 
+                            da die Produktion im bekannten Zeitraum nach und nach abtransportiert wird nach Werk 2.
                             </p>
                     </div> 
-                  <div className="container">
-                   <div className="login">
-                    <form className="createNewTool">
-                      <div className="fade-box">
+                <div className="shade">
+                    <div className="blackboard">
+                     <form className="form">
+                       <div className="fade-box">
                             <input type="text" id="title" placeholder="Benennung" />
                             <input type="text" id="year"  placeholder="Herstellungsjahr"/>
                             <input type="text" id="typ" placeholder="Typ z.b Vorrichtung"/>
@@ -206,14 +216,17 @@ class App extends React.Component {
                             <input type="number" id="rate"  placeholder="Zustand"/>
                             <input type="text" id="articleDescription" placeholder="Artikel verknüpfung" />
                             <input type="text" id="crowd"  placeholder="Stückzahl"/>
-                      </div>
+                        </div>
                    
 
-                        <button  onClick={this.NewTool}>Werkzeug anlegen</button>
+                        <button className='wipeout' onClick={this.NewTool}>Werkzeug anlegen</button>
                      </form> 
-                </div>     
-                    
-                </div>        
+                    </div>     
+                     
+                </div> 
+                    {/* 
+    
+                    */}
               </section>
             
       
