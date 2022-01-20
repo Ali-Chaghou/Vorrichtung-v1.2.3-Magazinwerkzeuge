@@ -6,6 +6,8 @@ import HomeHeader from './Components/HomeHeader';
 // import Searchbar from './Components/Searchbar';
 // import Form from './Components/Form';
 
+import Animation from "./Components/Animation";
+
 
 
 class App extends React.Component {
@@ -191,6 +193,7 @@ class App extends React.Component {
              </div>
             
         </div>
+        <Animation className="Animation-Arrow"/>
         
         <section className="FormSection">
 

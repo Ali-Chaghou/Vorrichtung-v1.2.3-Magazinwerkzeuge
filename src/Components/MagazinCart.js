@@ -1,4 +1,5 @@
 import './MagazinCart.css';
+import "./Animation.css";
 import Rating from './Rating';
 
 //Logo IMG
@@ -21,11 +22,11 @@ const MagazinCart = (props) => {
                 <div className='cardBody'>
 
                     <div className='Date-Typ-Pcs'>
-                        <p>Datum<span> {props.year}</span></p>
+                        <p className='Left-to-right '>Datum<span> {props.year}</span></p>
                         
-                        <p>Typ<span> {props.typ}</span></p>
+                        <p className='Left-to-right '>Typ<span> {props.typ}</span></p>
                         
-                        <p>Menge<span> {props.crowd} pcs</span> </p>
+                        <p className='Left-to-right '>Menge<span> {props.crowd} pcs</span> </p>
                     </div>
 
                     <div className='articleDescription'>

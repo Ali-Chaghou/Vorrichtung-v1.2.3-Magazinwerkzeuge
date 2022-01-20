@@ -142,8 +142,9 @@ a {
 .input-search {
   border: solid 1px #111;
   font-family: 'Permanent Marker', cursive;
-  font-size: .6em;
-  color: rgba(238, 238, 238, 0.8);
+  font-size: 1em;
+  font-weight: 900;
+  color: #111;
 
 }
 @media (min-width: 768px) {
@@ -587,7 +588,7 @@ Animation Keyframes
 
 
 .form {
-  padding: 70px 20px 20px;
+  padding: 30px 20px 20px;
 }
 
 
@@ -610,7 +611,7 @@ textarea {
   background: none;
   border: none;
   font-family: 'Permanent Marker', cursive;
-  font-size: 1.6em;
+  font-size: 2em;
   color: rgba(238, 238, 238, 0.8);
   line-height: .6em;
   outline: none;
@@ -624,30 +625,41 @@ textarea {
 }
 
 button {
-  cursor: pointer;
-  color: rgba(238, 238, 238, 0.7);
-  background-color: #222;
-  line-height: 1em;
-  padding:5px 5px;
-  margin-top: 10px;
+  width: 130px;
+  display: block;
+  margin: 15px auto;
+  height: 35px;
+  border: none;
+  background-color: #008855;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+ cursor: pointer
 }
 
-button:focus {
-  background: rgba(238, 238, 238, 0.2);
-  color: rgba(238, 238, 238, 0.2);
+button::before,
+button::after {
+    content:"";
+    position: absolute;
+    background-color: inherit;
+    height: 3px;
+    width: 30px;
+    transition:.3s
+}
+button::before {
+    top: -5px;
+    left: 0
+}
+button::after {
+    bottom: -5px;
+    right: 0
+}
+button:hover::before,
+button:hover::after {
+   width: 100%;
 }
 
-::-moz-selection {
-  background: rgba(238, 238, 238, 0.2);
-  color: rgba(238, 238, 238, 0.2);
-  text-shadow: none;
-}
-
-::selection {
-  background: rgba(238, 238, 238, 0.4);
-  color: rgba(238, 238, 238, 0.3);
-  text-shadow: none;
-}
 
 
 

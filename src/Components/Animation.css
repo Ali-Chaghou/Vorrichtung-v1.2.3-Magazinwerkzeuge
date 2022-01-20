@@ -1,0 +1,91 @@
+/*Scroll-Animation Arrow*/
+.pfeil:hover .pfeil-innen {
+    y: 0;
+    transition: all 1s linear;
+    cursor: pointer;
+    z-index: 10;
+  } 
+  
+  .icon-sticky {
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+  }
+  
+  .arrow-visible {
+    opacity: 1;
+  }
+  
+  .arrow-hide {
+    opacity: 0;
+  }
+  
+  
+  
+  /*Hover Effect Underline*/
+  .Left-to-right {
+      position: relative;
+      z-index: 1;
+      display: inline;
+    }
+  
+  .Left-to-right::after  {
+      position: absolute;
+      content: "";
+      bottom: 5px;
+      left: 0;
+      width: 0%;
+      border-bottom: 10px solid var(--red);
+      transition: 0.4s ease-in-out ;
+      z-index: -1;
+     
+  }
+  .Left-to-right:hover::after {
+      width: 100%;
+      z-index: -1;
+     
+  }
+  
+  .a-animation {
+    width: fit-content;
+  }
+  
+  .a-animation::after {
+    bottom: 42px;
+  }
+  
+  .h5-animation {
+    width: fit-content;
+  }
+  
+  
+  
+  
+  
+  
+  /*Hover Effect Scale*/
+  .ScaleAnimation-Container {
+    display: inline;
+  }
+  /*.ScaleAnimation-Container überhaupt notwendig?*/
+  
+  .ScaleAnimation-Container:hover {
+    /* width: 100%; */
+    height: 102px;
+  }
+  
+  .ScaleAnimation{
+      
+      color: var(--white);
+      z-index: 1;
+      text-transform: uppercase;
+      width: 100%;
+      transition: all 1s ease-in;
+  }
+  
+  .ScaleAnimation:hover{
+      font-size: 84px;
+  }
+  
+  
+  
