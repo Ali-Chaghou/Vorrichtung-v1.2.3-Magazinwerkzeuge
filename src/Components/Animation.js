@@ -42,8 +42,8 @@ class Animation extends React.Component {
             className="pfeil"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 72 102"
-            width="72"
-            height="102"
+            width="36"
+            height="51"
         >
             <defs>
               <clipPath id="clip-path">

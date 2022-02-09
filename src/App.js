@@ -199,19 +199,7 @@ class App extends React.Component {
 
                <div className="Formlogo"> 
                             <h4><i> Magazin App </i></h4>
-                            <p>
-                            Schön das du hier bist,<br/>
-                            findest du nicht auch nur wer die neuesten Technologien versteht, kann das Beste aus ihnen herausholen?
-                            Mein Ziel war es, uns mit React eine digitale Übersicht zu programmieren,
-                            die uns die Möglichkeit gibt stet genau zu wissen, wann sich wo was befindet.
-                            Die Idee entstand schon während der Umzugsplanung von Werk 3 (Remscheid) nach Werk 2 (Wuppertal), 
-                            da dachte ich, das wird uns durchaus bei unserem Vorhaben helfen können. Und ganz klar um kein Chaos am Ende zu bekommen, 
-                            da die Produktion im bekannten Zeitraum nach und nach abtransportiert wird nach Werk 2.
-                            </p>
-                    </div> 
-                <div className="shade">
-                    <div className="blackboard">
-                     <form className="form">
+                            <form className="form">
                        <div className="fade-box">
                             <input type="text" id="title" placeholder="Benennung" />
                             <input type="text" id="year"  placeholder="Herstellungsjahr"/>
@@ -226,6 +214,12 @@ class App extends React.Component {
 
                         <button className='wipeout' onClick={this.NewTool}>Werkzeug anlegen</button>
                      </form> 
+                    </div> 
+                <div className="shade">
+                    <div className="blackboard">
+                    <p>
+                              Der einsatzort der Magazin-App findet derzeit in W3-RS seine anwendung,meine idee war die Vorrichtung als Detailkarte mit Voreinstellwerten zu erfassen. Auf der Grundlage dieser Informationen ist es möglich, das richtige Werkzeug am richtigen Ort bereitzustellen und so Ausschuss, Nacharbeit oder Maschinenstillstand zu reduzieren. Eine übersichtliche und intuitiv bedienbare Oberfläche ermöglicht es den Anwendern, ihre Werkzeuge zu Filter und zu suchen, auf der Desktop Version kann der Anwender seine sucheergebnise auch sortieren.
+                            </p>
                     </div>     
                      
                 </div> 
