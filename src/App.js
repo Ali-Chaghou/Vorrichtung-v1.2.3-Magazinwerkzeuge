@@ -137,14 +137,14 @@ class App extends React.Component {
     <div className="navbar-component">
 
              <div className="navbar area">
-                      <nav role="navigation" id="navigation" className="list">
+                      {/* <nav role="navigation" id="navigation" className="list">
                          <a href="#" onClick={this.Ascending} className="item -link">Datum aufsteigend</a>
                          <a href="#" onClick={this.Descending}  className="item -link">Datum absteigend</a>
                           <a href="#" onClick={this.Rate}  className="item -link">Zustand</a>
                           <a href="#" onClick={this.sortAZ}  className="item -link">Von A-Z</a>
                           <a href="#" onClick={this.ZA}  className="item -link">Von Z-A</a>
-                      {/* <span class="item"><i className="fa fa-search"></i></span> */}
-                  </nav>
+                      <span class="item"><i className="fa fa-search"></i></span>
+                  </nav> */}
     
                  {/*
                   <button data-collapse data-target="#navigation" className="toggle">
