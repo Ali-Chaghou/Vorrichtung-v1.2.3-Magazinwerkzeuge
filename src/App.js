@@ -143,7 +143,7 @@ class App extends React.Component {
                           <a href="#" onClick={this.Rate}  className="item -link">Zustand</a>
                           <a href="#" onClick={this.sortAZ}  className="item -link">Von A-Z</a>
                           <a href="#" onClick={this.ZA}  className="item -link">Von Z-A</a>
-                      <span class="item"><i className="fa fa-search"></i></span>
+                      {/* <span class="item"><i className="fa fa-search"></i></span> */}
                   </nav>
     
                  {/*
