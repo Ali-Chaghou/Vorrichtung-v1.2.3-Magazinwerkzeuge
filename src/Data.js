@@ -166,10 +166,10 @@ import Spannbacken_336767 from "./Images/336767.jpg";
 import Spannbacken_336768 from "./Images/336768.jpg";
 import Spannbacken_336769 from "./Images/336769.jpg";
 import Spannbacken_336770 from "./Images/336770.jpg";
-import Spannbacken_336770_1 from "./Images/336770-1.jpg";
+// import Spannbacken_336770_1 from "./Images/336770-1.jpg";
 import Spannbacken_336771 from "./Images/336771.jpg";
 import Spannbacken_336772 from "./Images/336772.jpg";
-import Spannbacken_336773 from "./Images/336773.jpg";
+// import Spannbacken_336773 from "./Images/336773.jpg";
 import Spannbacken_336777 from "./Images/336777.jpg";
 import Spannbacken_336778 from "./Images/336778.jpg";
 import Spannbacken_336779 from "./Images/336779.jpg";
@@ -185,7 +185,6 @@ import Spannbacken_336803 from "./Images/336803.jpg";
 
 
 let magazin = [
-    //4191 + 4193
     {   
         image_url: [Spannbacken_336031],
         title: '336031 Spannbacken',
